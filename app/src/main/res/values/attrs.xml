@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomPanel">
+        <attr name="panelStyle" format="reference"/>
+        <attr name="activeTextColor" format="reference"/>
+        <attr name="panelTextColor" format="reference"/>
+        <attr name="panelBackground" format="reference"/>
+        <attr name="lowerBackground" format="reference"/>
+        <attr name="settingsTextColor" format="reference"/>
+        <attr name="settingsBackground" format="reference"/>
+        <attr name="settingsStyle" format="reference"/>
+        <attr name="settingsCheckImage" format="reference"/>
+        <attr name="dotColorOn" format="color"/>
+        <attr name="dotColorOff" format="color"/>
+        <attr name="custom_component_style" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="custom_component_color" format="color" />
+    </declare-styleable>
+</resources>

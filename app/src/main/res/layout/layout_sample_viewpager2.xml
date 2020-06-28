@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPagerContainer"
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="48dp"
+        app:ci_height="12dp"
+        app:ci_margin="6dp"
+        app:ci_width="12dp"
+        app:ci_drawable="@drawable/dot_shape_on"
+        app:ci_drawable_unselected="@drawable/dot_shape_off"/>
+
+</FrameLayout>
