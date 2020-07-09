@@ -9,7 +9,8 @@
     </style>
 
     <style name="ThemeOverlay.ThemesDemo.Light" parent="">
-        <item name="panelTextColor">@color/colorBlack</item>
+        <item name="viewPagerBackground">@color/colorGreenLight</item>
+        <item name="android:textColor">@color/grey1</item>
         <item name="panelBackground">@color/colorYellow</item>
         <item name="lowerBackground">@color/colorWhite</item>
         <item name="settingsTextColor">@color/grey1</item>
@@ -22,7 +23,8 @@
     </style>
 
     <style name="ThemeOverlay.ThemesDemo.Dark" parent="">
-        <item name="panelTextColor">@color/colorRed</item>
+        <item name="viewPagerBackground">@color/grey1</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="panelBackground">@color/colorBrown</item>
         <item name="lowerBackground">@color/colorAccent</item>
         <item name="settingsTextColor">@color/colorRed</item>
@@ -34,9 +36,28 @@
         <item name="custom_component_style">@style/CustomViewStyleDark</item>
     </style>
 
+    <style name="ThemeOverlay.ThemesDemo.Custom" parent="">
+        <item name="viewPagerBackground">@color/colorRed</item>
+        <item name="android:textColor">@color/colorGreenLight</item>
+        <item name="panelBackground">@color/grey1</item>
+        <item name="lowerBackground">@color/colorWhite</item>
+        <item name="settingsTextColor">@color/grey1</item>
+        <item name="settingsBackground">@color/colorGreenLight</item>
+        <item name="settingsCheckImage">@drawable/ic_keyboard_select_check_light</item>
+        <item name="settingsStyle">@style/PanelIntroStyleLight</item>
+        <item name="dotColorOn">@color/colorYellow</item>
+        <item name="dotColorOff">@color/grey1</item>
+        <item name="custom_component_style">@style/CustomViewStyleCustom</item>
+    </style>
+
     <style name="PanelIntroStyleLight">
         <item name="android:textColor">#ff0000</item>
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PanelIntroStyleCustom">
+        <item name="android:textColor">#00ff00</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="PanelIntroStyleDark">
@@ -47,6 +68,11 @@
     <style name="CustomViewStyleLight">
         <item name="android:src">@drawable/menu_button_idle_light</item>
         <item name="custom_component_color">@color/grey1</item>
+    </style>
+
+    <style name="CustomViewStyleCustom">
+        <item name="android:src">@drawable/menu_button_idle_light</item>
+        <item name="custom_component_color">@color/colorBrown</item>
     </style>
 
     <style name="CustomViewStyleDark">

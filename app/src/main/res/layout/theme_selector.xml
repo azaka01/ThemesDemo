@@ -12,6 +12,15 @@
         android:text="Light Theme"
         android:background="?attr/lowerBackground"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/customTheme"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/customTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Custom Theme"
+        android:background="?attr/lowerBackground"
+        app:layout_constraintStart_toEndOf="@+id/lightTheme"
         app:layout_constraintEnd_toStartOf="@+id/darkTheme"
         app:layout_constraintBottom_toBottomOf="parent" />
     <TextView
@@ -20,7 +29,7 @@
         android:layout_height="20dp"
         android:text="Dark Theme"
         android:background="?attr/lowerBackground"
-        app:layout_constraintStart_toEndOf="@id/lightTheme"
+        app:layout_constraintStart_toEndOf="@id/customTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

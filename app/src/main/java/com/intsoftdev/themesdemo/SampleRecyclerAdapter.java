@@ -52,12 +52,9 @@ public class SampleRecyclerAdapter
 
     static class TextViewHolder extends RecyclerView.ViewHolder {
 
-        private final Random random = new Random();
-
         static TextViewHolder createViewHolder(@NonNull ViewGroup parent) {
             TextView textView = new TextView(parent.getContext());
-            textView.setGravity(Gravity.CENTER);
-            textView.setTextColor(Color.WHITE);
+            textView.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL);
             textView.setTextSize(48);
             textView.setLayoutParams(
                     new RecyclerView.LayoutParams(RecyclerView.LayoutParams.MATCH_PARENT,
@@ -72,8 +69,6 @@ public class SampleRecyclerAdapter
         void bindView(int position) {
             TextView textView = (TextView) itemView;
             textView.setText(String.valueOf(position + 1));
-            textView.setBackgroundColor(0xff000000);
-            //textView.setBackgroundColor(0xff000000 | random.nextInt(0x00ffffff));
         }
     }
 }

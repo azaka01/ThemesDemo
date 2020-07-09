@@ -3,6 +3,7 @@
     android:id="@+id/viewPagerContainer"
     android:layout_width="400dp"
     android:layout_height="200dp"
+    android:background="?attr/viewPagerBackground"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.viewpager2.widget.ViewPager2

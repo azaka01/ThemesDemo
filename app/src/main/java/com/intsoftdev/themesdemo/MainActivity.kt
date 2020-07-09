@@ -9,6 +9,7 @@ import androidx.annotation.StyleRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.viewpager2.widget.ViewPager2
+import kotlinx.android.synthetic.main.themed_panel.*
 import me.relex.circleindicator.CircleIndicator3
 
 class MainActivity : AppCompatActivity() {
@@ -67,6 +68,9 @@ class MainActivity : AppCompatActivity() {
         parent.findViewById<TextView>(R.id.darkTheme).setOnClickListener {
             setDarkTheme()
         }
+        parent.findViewById<TextView>(R.id.customTheme).setOnClickListener {
+            setCustomTheme()
+        }
 
         parent.findViewById<TextView>(R.id.setting1).isSelected = true
 
@@ -76,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         viewpager.adapter = adapter
 
         // CircleIndicator3 for RecyclerView
-        val indicator: CircleIndicator3 = parent.findViewById<CircleIndicator3>(R.id.circleIndicator)//view.findViewById(R.id.indicator)
+        val indicator: CircleIndicator3 = parent.findViewById<CircleIndicator3>(R.id.circleIndicator)
         indicator.setViewPager(viewpager)
 
         // CurrentItem
@@ -92,5 +96,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun setDarkTheme() {
         attachViews(findViewById(R.id.rootView), R.style.ThemeOverlay_ThemesDemo_Dark)
+    }
+
+    private fun setCustomTheme() {
+        attachViews(findViewById(R.id.rootView), R.style.ThemeOverlay_ThemesDemo_Custom)
     }
 }

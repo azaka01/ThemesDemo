@@ -5,6 +5,7 @@
         <attr name="activeTextColor" format="reference"/>
         <attr name="panelTextColor" format="reference"/>
         <attr name="panelBackground" format="reference"/>
+        <attr name="viewPagerBackground" format="reference"/>
         <attr name="lowerBackground" format="reference"/>
         <attr name="settingsTextColor" format="reference"/>
         <attr name="settingsBackground" format="reference"/>
